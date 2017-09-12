@@ -26,6 +26,26 @@
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e"
   },
+  "jscsConfig": {
+    "preset": "google",
+    "requireCurlyBraces": true
+  },
+  "eslintConfig":{
+    "env": { "es6": true },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  },
+  "eslintIgnore": [
+    "config.js",
+    "dist/*",
+    "export/*",
+    "jspm_packages/*"
+  ],
   "devDependencies": {
     "aurelia-bundler": "^0.4.0",
     "aurelia-tools": "^0.2.4",
@@ -81,7 +101,6 @@
       "aurelia-templating-binding": "npm:aurelia-templating-binding@^1.0.0-beta.1.0.2",
       "aurelia-templating-resources": "npm:aurelia-templating-resources@^1.0.0-beta.1.0.4",
       "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0-beta.1.0.5",
-      "aurelia-update": "npm:aurelia-update@^1.1.0",
       "babel-core": "npm:babel-core@^6.5.2",
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "escodegen": "npm:escodegen@^1.8.0",
@@ -110,8 +129,5 @@
       }
     }
   },
-  "dependencies": {
-    "aurelia-webpack-plugin": "^2.0.0-rc.2",
-    "webpack": "^3.3.0"
-  }
+  "dependencies": {}
 }
