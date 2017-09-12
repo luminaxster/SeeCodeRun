@@ -1,9 +1,8 @@
 import {TraceModel} from '../trace-model';
 export class AutoLogTracer{
-  // to debug, set AUTOLOG_TRACER_DEBUG_MODE to true in html-viewer.js as well
-  AUTOLOG_TRACER_DEBUG_MODE = false;
-
     constructor(traceDataContainer){
+      // to debug, set AUTOLOG_TRACER_DEBUG_MODE to true in html-viewer.js as well
+        this.AUTOLOG_TRACER_DEBUG_MODE = false;
         this.traceDataContainer = traceDataContainer;
         this.traceModel = new TraceModel();
     }

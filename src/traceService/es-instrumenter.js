@@ -3,8 +3,8 @@ import {EsprimaNodeFactory} from './external/esprima-node-factory';
 import {AutoLogTracer} from './external/auto-log-tracer';
 
 export class EsInstrumenter {
-  code = "";
   constructor(traceModel) {
+    this.code = "";
     this.traceModel = traceModel;
     this.escodegen = escodegen;
     this.esprimaNodeFactory = new EsprimaNodeFactory();
