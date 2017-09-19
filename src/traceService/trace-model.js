@@ -39,7 +39,7 @@ export class TraceModel{
 
         this.traceDataContainer = "SeeCodeRunTraceDataResults";
         this.traceSyntax = {
-            AssignmentExpression: "AssignmentExpression",
+            AssignmentExpression: "AssignmentExpression", // add uses logic
             BinaryExpression: "BinaryExpression",
             BlockStatement: "BlockStatement",
             BreakStatement: "BreakStatement",
@@ -55,7 +55,8 @@ export class TraceModel{
             IfStatement: "IfStatement",
             LogicalExpression: "LogicalExpression",
             MemberExpression: "MemberExpression",
-            NewExpression: "NewExpression",
+            NewExpression: "NewExpression", // add def logic
+            ObjectExpression: "ObjectExpression", //pending, add object-interaction tag and taint for dataflow
             Program: "Program",
             Property: "Property",
             ReturnStatement: "ReturnStatement",
@@ -65,7 +66,7 @@ export class TraceModel{
             UnaryExpression: "UnaryExpression",
             UpdateExpression: "UpdateExpression",
             VariableDeclaration: "VariableDeclaration",
-            VariableDeclarator: "VariableDeclarator",
+            VariableDeclarator: "VariableDeclarator", // add def logic
             WhileStatement: "WhileStatement"
         };
 
@@ -76,12 +77,12 @@ export class TraceModel{
             BlockStatement: "BlockStatement",
             BreakStatement: "BreakStatement",
             CallExpression: "CallExpression",
-            CatchClause: "CatchClause",
-            ConditionalExpression: "ConditionalExpression",
+            CatchClause: "CatchClause", // need it?
+            ConditionalExpression: "ConditionalExpression", // pending
             ContinueStatement: "ContinueStatement",
             DoWhileStatement: "DoWhileStatement",
-            DebuggerStatement: "DebuggerStatement",
-            EmptyStatement: "EmptyStatement",
+            DebuggerStatement: "DebuggerStatement",// wut?
+            EmptyStatement: "EmptyStatement", // no need
             ExpressionStatement: "ExpressionStatement",
             ForStatement: "ForStatement",
             ForInStatement: "ForInStatement",
@@ -89,7 +90,7 @@ export class TraceModel{
             FunctionExpression: "FunctionExpression",
             Identifier: "Identifier",
             IfStatement: "IfStatement",
-            Literal: "Literal",
+            Literal: "Literal", // track them, what about string template?
             LabeledStatement: "LabeledStatement",
             LogicalExpression: "LogicalExpression",
             MemberExpression: "MemberExpression",
