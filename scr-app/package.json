@@ -118,6 +118,7 @@
   "scripts": {
     "start": "cross-env NODE_OPTIONS='--max_old_space_size=12000 --max_semi_space_size=256 --v8-pool-size=0' UV_THREADPOOL_SIZE=10 BROWSER=none react-app-rewired start",
     "build": "cross-env NODE_OPTIONS='--max_old_space_size=12000 --max_semi_space_size=256 --v8-pool-size=0' PUBLIC_URL='https://seecode.run' GENERATE_SOURCEMAP=false DISABLE_ESLINT_PLUGIN=true react-app-rewired build  --verbose",
+    "build-render": "react-app-rewired build  --verbose",
     "start-url": "cross-env PUBLIC_URL='https://seecode.run'& react-app-rewired start",
     "build-with-source-maps": "cross-env PUBLIC_URL='https://seecode.run' & react-app-rewired build",
     "build-dev": "firebase use development & cross-env PUBLIC_URL='https://seecoderun-2.firebaseapp.com' & react-app-rewired build",
